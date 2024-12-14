@@ -1,0 +1,9 @@
+# virtual environement
+venv/
+
+# pycache
+__pycache__/
+
+# future_evolution
+future_evolution.py
+whangarei.csv
