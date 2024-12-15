@@ -18,6 +18,7 @@ streamlit run app.py
 
 Acess to localhost:
 * http://localhost:8501
+
 or:
 * http://172.20.10.2:8501
 
