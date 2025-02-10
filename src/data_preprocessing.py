@@ -48,7 +48,7 @@ class Tank:
         self.water_data['volume_outlet_l'] = self.VOLUME_USERS_L
 
     def compute_difference(self, volume_stored_init_l):
-        volume_difference_l = [volume_stored_init_l for _ in range(len(self.water_data))]
+        volume_difference_l = [volume_stored_init_l] * len(self.water_data)
         for index in range(1, len(self.water_data)):
             # Compute difference (not saturated yet)
             volume_difference_l_index = volume_difference_l[index - 1] + self.water_data.iloc[index]['volume_inlet_l'] - self.water_data.iloc[index]['volume_outlet_l']
